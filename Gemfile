@@ -36,6 +36,9 @@ gem 'jquery-rails'
 #Sendgrid
 gem 'sendgrid-ruby'
 
+#Sidekiq
+gem 'sidekiq'
+
 gem 'devise'
 
 # Use ActiveStorage variant
