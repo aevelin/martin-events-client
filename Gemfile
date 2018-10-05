@@ -33,6 +33,9 @@ gem 'bootstrap', '~> 4.1.3'
 #jQuery
 gem 'jquery-rails'
 
+#Sendgrid
+gem 'sendgrid-ruby'
+
 gem 'devise'
 
 # Use ActiveStorage variant
