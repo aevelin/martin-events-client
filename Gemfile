@@ -39,6 +39,9 @@ gem 'sendgrid-ruby'
 #Sidekiq
 gem 'sidekiq'
 
+#reCaptcha
+gem 'recaptcha', require: 'recaptcha/rails'
+
 gem 'devise'
 
 # Use ActiveStorage variant
