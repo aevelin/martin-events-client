@@ -42,10 +42,11 @@ rake db:seed
 Create a file secret.env to your project root directory to keep secret keys. 
 
 Your file should consist of three secret keys:
-	* export SENDGRID_API_KEY='key here' (https://sendgrid.com/)
-	* export RECAPTCHA_SITE_KEY='key here' (https://www.google.com/recaptcha/admin#list)
-	* export RECAPTCHA_SECRET_KEY='key here'
-
+```
+export SENDGRID_API_KEY='key here' (https://sendgrid.com/)
+export RECAPTCHA_SITE_KEY='key here' (https://www.google.com/recaptcha/admin#list)
+export RECAPTCHA_SECRET_KEY='key here'
+```
 Run source secret.env
 ```
 source secret.env
