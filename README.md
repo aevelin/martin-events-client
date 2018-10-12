@@ -33,6 +33,27 @@ Making database:
 ```
 rake db:migrate
 ```
+* Adding secret keys:
+
+Add these lines to your Gemfile: gem 'recaptcha', require: 'recaptcha/rails' and gem 'sendgrid-ruby'
+
+Run bundle.
+```
+bundle
+```
+Create a file to your root directory to keep secret keys. For example secret.env.
+
+Add it to .gitignore.
+
+Your file should consist of three secret keys:
+	* export SENDGRID_API_KEY='key here' (https://sendgrid.com/)
+	* export RECAPTCHA_SITE_KEY='key here' (https://www.google.com/recaptcha/admin#list)
+	* export RECAPTCHA_SECRET_KEY='key here'
+
+Run source secret.env (or whatever your file is called).
+```
+source secret.env
+```
 Starting rails server to see your result in a browser:
 ```
 rails s
@@ -60,5 +81,6 @@ This project is licensed under the MIT License
 
 * Hat tip to anyone whose code was used
 * Inspiration
+
 
 
